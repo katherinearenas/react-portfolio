@@ -1,24 +1,59 @@
-import { Link } from 'react-router-dom';
-import Navbar from './UI/Navbar';
+import { Link, useLocation } from 'react-router-dom';
 
-export default function Nav() {
-  // The Navbar UI component will render each of the Link elements in the links prop
+
+function Nav() {
+  const currentPage = useLocation().pathname;
+
   return (
-    <Navbar
-      links={[
-        <Link key={1} className="nav-link text-light" to="/">
-          About Me
-        </Link>,
-        <Link key={2} className="nav-link text-light" to="/portfolio">
+    <ul className="nav nav-tabs">
+      <li className="nav-item">
+        <Link
+          to="/"
+          // This is a conditional (ternary) operator that checks to see if the current page is "Home"
+          // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
+          className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+        >
+          Home
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/About"
+          // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}
+        >
+          About
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/Portfolio"
+          // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
+        >
           Portfolio
-        </Link>,
-        <Link key={3} className="nav-link text-light" to="/resume">
-         Resume
-        </Link>,
-        <Link key={2} className="nav-link text-light" to="/contact">
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/Resume"
+          // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
+        >
+          Resume
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/Contact"
+          // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+        >
           Contact
-        </Link>,
-      ]}
-    />
+        </Link>
+      </li>
+    </ul>
   );
 }
+
+export default Nav;
