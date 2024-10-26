@@ -1,17 +1,72 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-
-function Nav() {
-  const currentPage = useLocation().pathname;
+function NavBar() {
+  // const currentPage = useLocation().pathname;
 
   return (
-    <ul className="nav nav-tabs">
+    <nav className="navbar is-primary" role="navigation" aria-label="main navigation">
+      <div className="navbar-brand">
+          <Link className="navbar-item" to="/">
+            <strong>About Katherine</strong>
+          </Link>
+  
+          {/* Burger menu for mobile */}
+          <a
+            role="button"
+            className={`navbar-burger ${isActive ? 'is-active' : ''}`}
+            aria-label="menu"
+            aria-expanded="false"
+            onClick={handleToggle}
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
+          <div className="navbar-start">
+            <Link className="navbar-item" to="/about">
+              About
+            </Link>
+            <Link className="navbar-item" to="/portfolio">
+              Portfolio
+            </Link>
+            <Link className="navbar-item" to="/contact">
+              Contact
+            </Link>
+          </div>
+  
+          <div className="navbar-end">
+            <div className="navbar-item">
+              <div className="buttons">
+                <a
+                  className="button is-light"
+                  href="https://linkedin.com/in/katherine-arenas"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  className="button is-light"
+                  href="https://github.com/katherine-arenas"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </nav> 
+  )};
+export default NavBar
+    {/* <ul className="nav nav-tabs">
       <li className="nav-item">
         <Link
           to="/"
-          // This is a conditional (ternary) operator that checks to see if the current page is "Home"
-          // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-          className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === '/about' ? 'nav-link active' : 'nav-link'}
         >
           About
         </Link>
@@ -19,32 +74,32 @@ function Nav() {
       <li className="nav-item">
         <Link
           to="/Portfolio"
-          // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
+       
+          className={currentPage === '/portfolio' ? 'nav-link active' : 'nav-link'}
         >
           Portfolio
         </Link>
       </li>
       <li className="nav-item">
         <Link
-          to="/Resume"
-          // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
+          to="/resume"
+          className={currentPage === '/resume' ? 'nav-link active' : 'nav-link'}
         >
           Resume
         </Link>
       </li>
       <li className="nav-item">
         <Link
-          to="/Contact"
+          to="/contact"
           // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === '/contact' ? 'nav-link active' : 'nav-link'}
         >
           Contact
         </Link>
       </li>
     </ul>
+    </nav>
   );
 }
 
-export default Nav;
+export default Nav; */}

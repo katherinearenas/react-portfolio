@@ -1,6 +1,6 @@
 // Bringing in the required import from 'react-router-dom'
 import { Outlet } from 'react-router-dom';
-import Nav from './components/Navigation';
+import NavBar from './components/Navigation';
 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       {/* <Header/> */}
-      <Nav />
+      <NavBar />
       <main className="mx-3">
         <Outlet />
       </main>

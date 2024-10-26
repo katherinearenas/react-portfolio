@@ -1,13 +1,12 @@
 export default function Resume() {
         return (
-          <div className="resume">
+          <div className="resume is-centered">
             <h2>Resume</h2>
       
             {/* Personal Information */}
             <section className="personal-info">
               <h3>Katherine Arenas</h3>
               <p>Email: katherineelainearenas@gmail.com</p>
-              {/* <p>Phone: (123) 456-7890</p> */}
               <p>Location: Chicago, IL</p>
               <p><a href="github.com/katherinearenas">Github</a></p>
             </section>
@@ -19,8 +18,6 @@ export default function Resume() {
                 Fullstack web developer with experience in building responsive, dynamic web applications. Proficient in JavaScript, Node.js, Express, SQL, Sequelize, MongoDb, GraphQL, and React excited about learning both back and front-end technologies. Passionate about problem-solving and delivering pleasant user experiences.
               </p>
             </section>
-      
-            {/* Technical Skills */}
             <section className="skills">
               <h3>Technical Skills</h3>
               <ul>

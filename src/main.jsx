@@ -10,6 +10,25 @@ import Resume from './pages/Resume';
 import Portfolio from './pages/Portfolio';
 import 'bulma/css/bulma.min.css';
 
+
+const projectList = [
+  {
+    title: 'Book Club App',
+    description: 'A web application to manage members, books, and clubs using React, Node.js, Express, and Sequelize.',
+    githubLink: 'https://github.com/Team-we-dont-know-yet/Bookclub'
+  },
+  {
+    title: 'Blog',
+    description: 'A CMS style blogsite',
+    githubLink: 'https://github.com/katherinearenas/week-fourteen-challenge-karenas'
+  },
+  {
+    title: 'Note-Taking App',
+    description: 'A GitHub gist explaining a regex for a US Phone Number Validation',
+    githubLink: 'https://gist.github.com/katherinearenas/97175732d9b3caa7b32bc8f857add19e'
+  },
+];
+
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
   {
@@ -22,15 +41,15 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: '/Portfolio',
-        element: <Portfolio />,
+        path: '/portfolio',
+        element: <Portfolio projectList ={projectList} />,
       },
       {
-        path: '/Resume',
+        path: '/resume',
         element: <Resume />,
       },
       {
-        path: '/Contact',
+        path: '/contact',
         element: <Contact />,
       },
     ],
