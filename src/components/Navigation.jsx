@@ -1,13 +1,19 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react'
 
 function NavBar() {
-  // const currentPage = useLocation().pathname;
+  const [isActive, setIsActive] = useState(false);
+  
+  // Toggle the burger menu
+  const handleToggle = () => {
+    setIsActive(!isActive);
+  };
 
   return (
     <nav className="navbar is-primary" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
           <Link className="navbar-item" to="/">
-            <strong>About Katherine</strong>
+            <strong>Katherine</strong>
           </Link>
   
           {/* Burger menu for mobile */}
@@ -25,8 +31,8 @@ function NavBar() {
         </div>
         <div className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
           <div className="navbar-start">
-            <Link className="navbar-item" to="/about">
-              About
+            <Link className="navbar-item" to="/resume">
+              Resume
             </Link>
             <Link className="navbar-item" to="/portfolio">
               Portfolio
@@ -41,15 +47,7 @@ function NavBar() {
               <div className="buttons">
                 <a
                   className="button is-light"
-                  href="https://linkedin.com/in/katherine-arenas"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  LinkedIn
-                </a>
-                <a
-                  className="button is-light"
-                  href="https://github.com/katherine-arenas"
+                  href="https://github.com/katherinearenas"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
