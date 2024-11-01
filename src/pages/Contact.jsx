@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
+
 const Contact = () => {
   const form = useRef();
   const [isSent, setIsSent] = useState(false);
@@ -12,8 +13,9 @@ const Contact = () => {
     setIsSent(false);
 
     emailjs
-      .sendForm('service_ajfey8h', 'template_noryvjo', form.current, {
-        publicKey: 'sGRBt2eauxn9zhjrM',
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID,e.target, {
+        publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
       })
       .then((result) => {
         console.log(result.text);

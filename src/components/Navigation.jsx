@@ -13,7 +13,7 @@ function NavBar() {
     <nav className="navbar is-primary" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
           <Link className="navbar-item" to="/">
-            <strong>Katherine</strong>
+            <strong>About Katherine</strong>
           </Link>
   
           {/* Burger menu for mobile */}
