@@ -1,8 +1,26 @@
-# React + Vite
+# week-twenty-challenge-karenas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# week-twelve-challenge-karenas
+## Description
+This project uses React to create a portfolio application.
 
-Currently, two official plugins are available:
+### Purpose:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The purpose of this project is to present the user with a portfolio including my About page, Resume page, and Portfolio page.
+
+### Functionality:
+
+Users can use the navigation bar to navigate between pages of this portfolio app.  
+
+
+### Goals Accomplished:
+
+Users are able to view my Resume, About and Portfolio. The portfolio page includes links to some of my github repositories which I think best represent my work.
+
+
+
+### Deployment:
+
+[Portfolio](https://katherinearenas.netlify.app/)
+
+
