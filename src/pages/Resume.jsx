@@ -50,7 +50,7 @@ export default function Resume() {
                 <ul>
                   <li>Collected insurance information from patients for billing purposes</li>
                   <li>Helped modernize the front desk for a more productive workspace</li>
-                  <li>Managed files and calendars .</li>
+                  <li>Managed files and calendars.</li>
                 </ul>
               </div>
               <div className="job">
@@ -60,15 +60,6 @@ export default function Resume() {
                   <li>Learned how to work with clay to create three dimensional forms</li>
                   <li>Developed a Zine series, wrote multiple issues and still creating new ones.</li>
                   <li>Developed drawing skills and studied design.</li>
-                </ul>
-              </div>
-              <div className="job">
-                <h4>Freelance Data Migration Assistant</h4>
-                <p>Various Projects | 2023-2024</p>
-                <ul>
-                  <li>Streamlined local files, and cloud storage.</li>
-                  <li> Worked with client to create company bios, about, and written resources.</li>
-                  <li>Helped to enhance clarity and SEO.</li>
                 </ul>
               </div>
             </section>
