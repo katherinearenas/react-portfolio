@@ -1,163 +1,83 @@
-export default function Resume() {
-        return (
-          <div className="container">
-          <div className="columns is-centered">
-            <div className="column is-half">
-              <div className="box has-text-centered">
-                <h2 className="title is-3">Resume</h2>
-    
-                {/* Personal Information */}
-                <section className="personal-info">
-                  <h3 className="subtitle is-4">Katherine Arenas</h3>
-                  <p>Email: katherineelainearenas@gmail.com</p>
-                  <p>Location: Chicago, IL</p>
-                  <p><a href="https://github.com/katherinearenas">GitHub</a></p>
-                </section>
-    
-                {/* Summary */}
-                <section className="summary">
-                  <h3 className="subtitle is-4">Summary</h3>
-                  <p>
-                    Fullstack web developer with experience in building responsive, dynamic web applications. Proficient in JavaScript, Node.js, Express, SQL, Sequelize, MongoDb, GraphQL, and React. Passionate about problem-solving and delivering pleasant user experiences.
-                  </p>
-                </section>
-                <section className="skills">
-                  <h3 className="subtitle is-4">Skills</h3>
-                  <ul>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Express</li>
-                    <li>SQL & Sequelize</li>
-                    <li>MongoDB & GraphQL</li>
-                  </ul>
-                </section>
-                <section className="experience">
-              <h3 className="subtitle is-4">Experience</h3>
-              <div className="job">
-                <h4>Freelance Data Migration Assistant</h4>
-                <p>Various Projects | 2023-2024</p>
-                <ul>
-                  <li>Streamlined local files, and cloud storage.</li>
-                  <li> Worked with client to create company bios, about, and written resources.</li>
-                  <li>Helped to enhance clarity and SEO.</li>
-                </ul>
-              </div>
-      
-              <div className="job">
-                <h4>Front Desk</h4>
-                <p>Symmetry Physical Therapy | 2023</p>
-                <ul>
-                  <li>Collected insurance information from patients for billing purposes</li>
-                  <li>Helped modernize the front desk for a more productive workspace</li>
-                  <li>Managed files and calendars.</li>
-                </ul>
-              </div>
-              <div className="job">
-                <h4>Coursework in Ceramics and Drawing</h4>
-                <p>2022-2024</p>
-                <ul>
-                  <li>Learned how to work with clay to create three dimensional forms</li>
-                  <li>Developed a Zine series, wrote multiple issues and still creating new ones.</li>
-                  <li>Developed drawing skills and studied design.</li>
-                </ul>
-              </div>
-            </section>
-            <section className="education">
-              <h3 className="subtitle is-4">Education</h3>
-              <ul>
-              <li><p><strong>Juris Doctorate</strong> - University of Illinois Urbana-Champaign - Illinois College of Law (Class of 2017)</p></li>
-              <li><p><strong>Bachelor of Arts in Political Science</strong> - University of Illinois Urbana-Champaign (Class of 2014)</p></li>
-              <li><p><strong>High School Diploma</strong> - Illinois Mathematics and Science Academy (Class of 2011)</p></li>
-                </ul>
-            </section>
-            <section className="certifications">
-              <h3>Certifications</h3>
-              <p><strong>Full Stack Web Development</strong> - Northwestern Bootcamp (2024)</p>
-              </section>
-              </div>
-            </div>
-          </div>
-        </div>)}
+import React from "react";
+import "./style/resume.css";
 
+function Resume() {
+  return (
+    <div className="resume-container">
+      <h1>Katherine Arenas</h1>
+      <p>Chicago, IL | katherineelainearenas@gmail.com</p>
+     
 
+      <section className="resume-section">
+        <h2>Skills</h2>
+        <p>Fullstack web developer with experience in building responsive, dynamic web applications. Proficient in JavaScript, Node.js, Express, SQL, Sequelize, MongoDb, GraphQL, and React. Passionate about problem-solving and delivering pleasant user experiences.</p>
+      </section>
 
-      
-          
-      
-//             {/* Work Experience */}
-//             <section className="experience">
-//               <h3>Work Experience</h3>
-//               <div className="job">
-//                 <h4>Freelance Data Migration Assistant</h4>
-//                 <p>Various Projects | 2023-2024</p>
-//                 <ul>
-//                   <li>Streamlined local files, and cloud storage.</li>
-//                   <li> Worked with client to create company bios, about, and written resources.</li>
-//                   <li>Helped to enhance clarity and SEO.</li>
-//                 </ul>
-//               </div>
-      
-//               <div className="job">
-//                 <h4>Front Desk</h4>
-//                 <p>Symmetry Physical Therapy | 2023</p>
-//                 <ul>
-//                   <li>Collected insurance information from patients for billing purposes</li>
-//                   <li>Helped modernize the front desk for a more productive workspace</li>
-//                   <li>Managed files and calendars .</li>
-//                 </ul>
-//               </div>
-//               <div className="job">
-//                 <h4>Coursework in Ceramics and Drawing</h4>
-//                 <p>2022-2024</p>
-//                 <ul>
-//                   <li>Learned how to work with clay to create three dimensional forms</li>
-//                   <li>Developed a Zine series, wrote multiple issues and still creating new ones.</li>
-//                   <li>Developed drawing skills and studied design.</li>
-//                 </ul>
-//               </div>
-//               <div className="job">
-//                 <h4>Freelance Data Migration Assistant</h4>
-//                 <p>Various Projects | 2023-2024</p>
-//                 <ul>
-//                   <li>Streamlined local files, and cloud storage.</li>
-//                   <li> Worked with client to create company bios, about, and written resources.</li>
-//                   <li>Helped to enhance clarity and SEO.</li>
-//                 </ul>
-//               </div>
-//             </section>
-      
-//             {/* Education */}
-//             <section className="education">
-//               <h3>Education</h3>
-//               <ul>
-//               <li><p><strong>Juris Doctorate</strong> - University of Illinois Urbana-Champaign - Illinois College of Law (Class of 2017)</p></li>
-//               <li><p><strong>Bachelor of Arts in Political Science</strong> - University of Illinois Urbana-Champaign (Class of 2014)</p></li>
-//               <li><p><strong>High School Diploma</strong> - Illinois Mathematics and Science Academy (Class of 2011)</p></li>
-//                 </ul>
-//             </section>
-      
-//             {/* Certifications (Optional) */}
-//             <section className="certifications">
-//               <h3>Certifications</h3>
-//               <p><strong>Full Stack Web Development</strong> - Northwestern Bootcamp (2024)</p>
-//               </section>
-// {/*       
-//             // {/* Projects 
-//             <section className="projects">
-//               <h3>Projects</h3>
-//               <div className="project">
-//                 <h4>Book Club App</h4>
-//                 <p>A web application to manage members, books, and clubs using React, Node.js, Express, and Sequelize.</p>
-//                 <a href="https://github.com/katherine-arenas/book-club-app" target="_blank" rel="noopener noreferrer">GitHub</a>
-//               </div>
-      
-//               <div className="project">
-//                 <h4>Portfolio Website</h4>
-//                 <p>Built a personal portfolio showcasing projects and experience using React, Sass, and CSS3.</p>
-//                 <a href="https://github.com/katherine-arenas/portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
-//               </div>
-//             </section> */}
-//           </div> 
-//         );
-//       };    
+      <section className="resume-section">
+        <h2>Education</h2>
+        <ul>
+          <li>Certificate in Fullstack Web Development | Northwestern University | Remote | 2024</li>
+          <li>Juris Doctorate in Law | University of Illinois Urbana-Champaign College of Law | Champaign, IL | 2017</li>
+          <li>Bachelor of Arts in Political Science | University of Illinois Urbana-Champaign | Champaign, IL | 2014</li>
+          <li>High School Diploma | Illinois Mathematics and Science Academy | Aurora, IL | 2011</li>
+        </ul>
+      </section>
+
+      <section className="resume-section">
+        <h2>Experience</h2>
+        <ul>
+          <li>
+            <strong>Freelance Data Migration Assistant</strong> | Remote | 2023-Present
+            <ul>
+              <li>Streamlined local files and cloud storage.</li>
+              <li>Created company bios, about sections, and written resources.</li>
+              <li>Enhanced clarity and SEO.</li>
+              <li>Provided comprehensive work product with zero complaints.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Front Desk</strong> | Symmetry Physical Therapy | Chicago, IL | April 2023 - August 2023
+            <ul>
+              <li>Collected insurance information from patients for billing purposes.</li>
+              <li>Modernized the front desk for a more productive workspace.</li>
+              <li>Managed files and calendars.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Judicial Law Clerk</strong> | Cook County Chancery Court | Chicago, IL | November 2018 - October 2019
+            <ul>
+              <li>Prepared interns to work under and shadow the Judge.</li>
+              <li>Wrote briefs and sections of judicial opinions.</li>
+              <li>Maintained judicial files and court calendar.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Associate Attorney</strong> | Barnes & Mitchell | Chicago, IL | February 2018 - September 2019
+            <ul>
+              <li>Appeared for status calls in Cook County and Will County Court.</li>
+              <li>Wrote detailed presentation notes for hearings on insurance coverage issues.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Freelance Editor</strong> | Illinois State Bar Association | Remote | June 2016 - January 2019
+            <ul>
+              <li>Edited multiple practice guides for attorneys, including a DUI handbook and guide to attorney’s fees.</li>
+              <li>Formatted practice guides and summarized cases.</li>
+              <li>Maintained detailed spreadsheets and completed additional research.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Research Assistant</strong> | Professor James Cleith Phillips | Remote | June 2015 - November 2015
+            <ul>
+              <li>Researched law professors' political leanings through open-source data.</li>
+              <li>Coded and analyzed data using political science expertise.</li>
+              <li>Maintained detailed spreadsheets and completed additional data entry.</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </div>
+  );
+}
+
+export default Resume;

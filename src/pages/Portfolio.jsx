@@ -1,37 +1,42 @@
-import Project from '../components/Project';
+import React from "react";
+import "./style/Portfolio.css";
 
-const Portfolio = (props) => {
-    return(
-        <div className="container">
-      <section className="section">
-        <h2 className="title has-text-centered">Portfolio</h2>
+const projects = [
+  {
+    id: 1,
+    title: "Project One",
+    description: "A description of Project One.",
+    link: "https://example.com/project-one",
+  },
+  {
+    id: 2,
+    title: "Project Two",
+    description: "A description of Project Two.",
+    link: "https://example.com/project-two",
+  },
+  {
+    id: 3,
+    title: "Project Three",
+    description: "A description of Project Three.",
+    link: "https://example.com/project-three",
+  },
+];
 
-        {/* Cards Section */}
-        <div className="columns is-multiline">
-          {props.projectList.map((project, index) => (
-            <Project project={project} key={index}/>
-            // <div className="column is-one-third" key={index}>
-            //   <div className="card">
-            //     <div className="card-content">
-            //       <p className="title is-4">{project.title}</p>
-            //       <p>{project.description}</p>
-            //     </div>
-            //     <footer className="card-footer">
-            //       <a 
-            //         href={project.githubLink} 
-            //         className="card-footer-item" 
-            //         target="_blank" 
-            //         rel="noopener noreferrer">
-            //         View on GitHub
-            //       </a>
-            //     </footer>
-            //   </div>
-            // </div>
-          ))}
-        </div>
-      </section>
+function Portfolio() {
+  return (
+    <div className="portfolio-container">
+      <h1>My Portfolio</h1>
+      <div className="cards-container">
+        {projects.map((project) => (
+          <div key={project.id} className="card">
+            <h2>{project.title}</h2>
+            <p>{project.description}</p>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
 
-export default Portfolio
+export default Portfolio;
