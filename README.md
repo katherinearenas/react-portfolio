@@ -1,6 +1,5 @@
 # week-twenty-challenge-karenas
 
-# week-twelve-challenge-karenas
 ## Description
 This project uses React to create a portfolio application.
 
