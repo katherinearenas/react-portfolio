@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import './style/contact.css'
 
 
 const Contact = () => {
@@ -117,3 +118,5 @@ export default Contact
 //     );
 //   };
 //   export default Contact
+
+

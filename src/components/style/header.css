@@ -3,9 +3,14 @@
   color: var(--black-olive);
   padding: 10px 20px;
   display: flex;
+  position: fixed;
+  top 0;
   justify-content: space-between;
-  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0;
 }
+
 
 .header-container {
   display: flex;
@@ -14,7 +19,7 @@
 }
 
 .logo {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
   color: var(--black-olive);
 }
@@ -30,7 +35,11 @@
 
 .nav {
   display: flex;
+  justify-content: center; /* Centers the links */
   gap: 20px;
+  align-items: center;
+  width: 100%; /* Ensures the nav spans the full width */
+  margin: 0 auto; 
 }
 
 .nav ul {
