@@ -1,7 +1,8 @@
 .resume-container {
-    padding: 20px;
+    padding: 100px;
     max-width: 800px;
     margin: 0 auto;
+    align-items: center ;
   }
   
   .resume-container h1 {
