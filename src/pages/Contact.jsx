@@ -2,8 +2,19 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './style/contact.css'
 
+function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
 
-const Contact = () => {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
   const form = useRef();
   const [isSent, setIsSent] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
@@ -19,7 +30,7 @@ const Contact = () => {
         publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
       })
       .then((result) => {
-        console.log(result.text);
+        console.log("Success",result.text);
         setIsSent(true);
         form.current.reset();
       }, (error) => {
@@ -29,41 +40,44 @@ const Contact = () => {
     };
   
     return (
-      <section className="section">
-        <div className="container">
-          <h1 className="title">Contact Me</h1>
-          
-          <form ref={form} onSubmit={sendEmail}>
-            <div className="field">
-              <label className="label">Name</label>
-              <div className="control">
-                <input className="input" type="text" name="user_name" placeholder="Your Name" required />
-              </div>
-            </div>
-  
-            <div className="field">
-              <label className="label">Email</label>
-              <div className="control">
-                <input className="input" type="email" name="user_email" placeholder="Your Email" required />
-              </div>
-            </div>
-  
-            <div className="field">
-              <label className="label">Message</label>
-              <div className="control">
-                <textarea className="textarea" name="message" placeholder="Your Message" required></textarea>
-              </div>
-            </div>
-  
-            <div className="control">
-              <button className="button is-primary" type="submit">Send Message</button>
-            </div>
+      (
+        <div className="contact-container">
+          <h1>Contact Me</h1>
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <label htmlFor="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+    
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+    
+            <label htmlFor="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
+    
+            <button type="submit">Send</button>
           </form>
-  
-          {isSent && <p className="notification is-success mt-4">Your message has been sent successfully!</p>}
-          {errorMessage && <p className="notification is-danger mt-4">{errorMessage}</p>}
+          {status && <p className="status">{status}</p>}
         </div>
-      </section>
     );
   };
 
