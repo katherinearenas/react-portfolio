@@ -52,7 +52,7 @@ function Resume() {
             </ul>
           </li>
           <li>
-            <strong>Associate Attorney</strong> | Barnes & Mitchell | Chicago, IL | February 2018 - September 2019
+            <strong>Associate Attorney</strong> | Barnes & Mitchell | Chicago, IL | February 2018 - September 2018
             <ul>
               <li>Appeared for status calls in Cook County and Will County Court.</li>
               <li>Wrote detailed presentation notes for hearings on insurance coverage issues.</li>
