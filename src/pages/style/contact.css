@@ -1,9 +1,19 @@
 .contact-container {
-    max-width: 600px;
+    width: 100%;
+    /* display: flex; */
+    /* padding: 100px; */
+    /* justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto; */
+  }
+
+  .form-container{
+    width: 50%;
     margin: 0 auto;
-    padding: 100px;
-    text-align: center;
-    /* align-items: center; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
   }
   
   .contact-form {
@@ -11,11 +21,13 @@
     flex-direction: column;
     gap: 15px;
     align-items: center;
+    justify-content: center;
   }
   
   .contact-form label {
-    font-size: 1.1em;
+    font-size: 1.3em;
     margin-bottom: 5px;
+    align-self: left;
   }
   
   .contact-form input,
@@ -45,6 +57,6 @@
   .status {
     margin-top: 15px;
     font-weight: bold;
-    color: var(--hunter-green);
+    color: var(--platinum);
   }
   

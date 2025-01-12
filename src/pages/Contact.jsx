@@ -39,6 +39,7 @@ function Contact() {
 
   return (
     <div className="contact-container">
+      <div className="form-container">
       <h1>Contact Me</h1>
       <form className="contact-form" onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
@@ -74,6 +75,7 @@ function Contact() {
         <button type="submit">Send</button>
       </form>
       {status && <p className="status">{status}</p>}
+    </div>
     </div>
   );
 }

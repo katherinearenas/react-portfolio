@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Garamond, 'Book Antiqua', 'Times New Roman', Times, serif, ;
   line-height: 1.5;
   font-weight: 400;
 
@@ -11,6 +11,12 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --hunter-green: #3a5a40ff;
+  --black-olive: #213129ff;
+  --sage: #aaae8eff;
+  --beaver: #a68777ff;
+  --platinum: #e0e0e0ff;
 }
 
 a {
@@ -21,14 +27,16 @@ a {
 a:hover {
   color: #535bf2;
 }
-
+ 
 body {
   margin: 0;
-  display: flex;
+  color: var(--platinum);
+  width: 100%;
+  background-color: var(--black-olive);
+  /*display: flex; 
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+  min-width: 320px; */
+} 
 
 h1 {
   font-size: 3.2em;
