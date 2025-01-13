@@ -12,7 +12,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header-container">
-        <img src="src/assets/images/logo.png" alt="logo" className="logo" height ="75px"/>
+        <img src="/images/logo.png" alt="Katherine Arenas" className="logo" height ="75px"/>
         <button className="menu-toggle" onClick={toggleMenu}>
           {isOpen ? "Close" : "Menu"}
         </button>

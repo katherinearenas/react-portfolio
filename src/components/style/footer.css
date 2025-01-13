@@ -1,6 +1,6 @@
 .footer {
-    background-color: var(--hunter-green);
-    color: var(--platinum);
+    background-color: var(--sage);
+    color: var(--hunter-green);
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -15,8 +15,8 @@
   }
   
   .footer a {
-    color: var(--platinum);
-    text-decoration: none;
+    color: var(--hunter-green);
+    text-emphasis: bold;
     font-size: 1em;
   }
   

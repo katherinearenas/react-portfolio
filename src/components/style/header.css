@@ -5,7 +5,7 @@
   display: flex;
   position: fixed;
   top: 0;
-  justify-content: space-evenly;
+  justify-content: center;
   text-align: center;
   width: 100%;
   margin: 0;
@@ -14,6 +14,7 @@
 
 .header-container {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
@@ -35,9 +36,8 @@
 
 .nav {
   display: flex;
-  justify-content: center; /* Centers the links */
-  gap: 20px;
-  align-items: center;
+  justify-content: center;
+  align-items: center; 
   width: 100%; /* Ensures the nav spans the full width */
   margin: 0 auto; 
 }

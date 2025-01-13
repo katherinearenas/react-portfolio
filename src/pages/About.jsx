@@ -4,7 +4,7 @@ import "./style/about.css";
 function About() {
   return (
     <div className="about-container">
-       <h1>About Me</h1><img src="src/assets/images/katherineprofile.png" alt="Photo of Katherine" width="200px" height="200px"/> 
+       <h1>About Me</h1><img src="/images/katherineprofile.png" alt="Photo of Katherine" width="200px" height="200px"/> 
       <div className="about-content"> 
         <p>
           Hi, I’m Katherine Arenas, a full-stack web developer with a passion for creating dynamic and responsive web applications. With a certification from Northwestern University in Fullstack Web Development, I specialize in JavaScript, React, Node.js, MongoDB, and GraphQL and am always interested in learning more about programming tools and languages. My journey into tech was fueled by my love for problem-solving and a desire to bring ideas to life through code.
