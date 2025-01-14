@@ -1,40 +1,10 @@
-/* :root {
-  --hunter-green: #3a5a40ff;
-  --black-olive: #213129ff;
-  --sage: #aaae8eff;
-  --beaver: #a68777ff;
-  --platinum: #e0e0e0ff;
-} */
 
-body {
-  background-color: var(--black-olive);
-  /* color: var(--platinum); */
-  /* font-family: Arial, sans-serif; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* justify-items: center; */
-  /* align-items: center; */
-  /* width: 100%; */
-}
 
 .app-container {
-  /* display: flex; */
-  /* flex-direction: column;*/
-  /* justify-self: center; */
-  /* align-self: center;  */
-  /* min-height: 100vh; */
-  /* width: 85%; Ensures it spans the full width */
-  /* box-sizing: border-box; Includes padding and border in the element's total width and height */
-  /* width: 100%; */
   background-color: var(--black-olive);
 }
 
 main {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* min-width: 90%; */
-  /* max-width: 900px; */
   background-color: var(--black-olive);
   padding: 5%
 }

@@ -11,8 +11,11 @@ function Footer() {
         <a href="https://www.instagram.com/katherinesaesthetic" target="_blank" rel="noopener noreferrer">
           Instagram
         </a>
-        <a href="https://www.katherinesaesthetic.com" target="_blank" rel="noopener noreferrer">
-          Art Portfolio
+        {/* <a href="https://www.katherinesaesthetic.com" target="_blank" rel="noopener noreferrer">
+          Art Portfolio add back in when deployed
+        </a> */}
+        <a href="https://github.com/katherinearenas" target="_blank" rel="noopener noreferrer">
+          Github
         </a>
       </div>
     </footer>

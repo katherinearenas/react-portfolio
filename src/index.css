@@ -33,7 +33,7 @@ body {
   color: var(--platinum);
   width: 100%;
   background-color: var(--black-olive);
-  /*display: flex; 
+  /* display: flex; 
   place-items: center;
   min-width: 320px; */
 } 
