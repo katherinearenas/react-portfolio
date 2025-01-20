@@ -1,4 +1,4 @@
-#React Portfolio
+# React Portfolio
 
 ## Description
 This project uses React to create a portfolio application.
